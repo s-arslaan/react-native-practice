@@ -6,7 +6,7 @@ export default function FlatCards() {
   const styles = css();
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, styles.m10]}>
       <Text style={[styles.headingText]}>Cards</Text>
       <ScrollView horizontal={true} style={styles.containerRow}>
         <View style={[styles.card, styles.cardRed]}>

@@ -10,13 +10,18 @@ import {
 import {css} from './components/css/Css';
 import FlatCards from './components/Cards';
 import Links from './components/Links';
+import ContactList from './components/ContactList';
 
 function App(): React.JSX.Element {
   const styles = css();
   return (
     <SafeAreaView style={styles.background}>
-      <FlatCards />
-      <Links title="Google" websiteLink="https://www.google.com" />
+      <ScrollView>
+        <FlatCards />
+        <Links title="Google" websiteLink="https://www.google.com" color="green" />
+        <Links title="Facebook" websiteLink="https://www.facebook.com" color="blue" />
+        <ContactList />
+      </ScrollView>
     </SafeAreaView>
   );
 }

@@ -6,10 +6,12 @@ export const css = () => {
   return StyleSheet.create({
     container: {
       flex: 1,
-      margin: 10,
       paddingHorizontal: 10,
       // justifyContent: 'center',
       // alignItems: 'center',
+    },
+    m10: {
+      margin: 10,
     },
     containerRow: {
       flex: 1,
@@ -54,6 +56,27 @@ export const css = () => {
     },
     textBlack: {
       color: 'black',
+    },
+    contactCard: {
+      backgroundColor: '#333',
+      marginVertical: 10,
+      padding: 20,
+      borderRadius: 10,
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    contactImg: {
+      width: 50,
+      height: 50,
+      borderRadius: 50 / 2,
+    },
+    contactName: {
+      color: 'white',
+      fontSize: 18,
+      fontWeight: 'bold',
+    },
+    contactStatus: {
+      // color: 'white',
     },
   });
 };
