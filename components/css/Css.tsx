@@ -10,6 +10,10 @@ export const css = () => {
       // justifyContent: 'center',
       // alignItems: 'center',
     },
+    itemsCenter: {
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
     m10: {
       margin: 10,
     },
