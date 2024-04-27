@@ -18,6 +18,7 @@ function App(): React.JSX.Element {
     <SafeAreaView style={styles.background}>
       <ScrollView>
         <FlatCards />
+        <Text style={[styles.headingText, styles.container]}>Links</Text>
         <Links title="Google" websiteLink="https://www.google.com" color="green" />
         <Links title="Facebook" websiteLink="https://www.facebook.com" color="blue" />
         <ContactList />
