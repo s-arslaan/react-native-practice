@@ -5,41 +5,20 @@ import {
   SafeAreaView,
   StyleSheet,
   useColorScheme,
+  ScrollView,
 } from 'react-native';
+import {css} from './components/css/Css';
+import FlatCards from './components/Cards';
+import Links from './components/Links';
 
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const styles = css();
   return (
-    <SafeAreaView style={isDarkMode ? styles.darkBackground : styles.lightBackground}>
-      <View style={styles.container}>
-        <Text style={isDarkMode ? styles.textWhite : styles.textBlack}>
-          Hello World !!!
-        </Text>
-      </View>
+    <SafeAreaView style={styles.background}>
+      <FlatCards />
+      <Links title="Google" websiteLink="https://www.google.com" />
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  textWhite: {
-    color: 'white',
-  },
-  textBlack: {
-    color: 'black',
-  },
-  darkBackground: {
-    backgroundColor: 'black',
-    flex: 1,
-  },
-  lightBackground: {
-    backgroundColor: 'white',
-    flex: 1,
-  },
-});
 
 export default App;
