@@ -73,7 +73,7 @@ export default function ContactList() {
             />
             <View style={styles.container}>
                 <Text style={[styles.contactName]}>{contact.name}</Text>
-                <Text style={styles.contactStatus}>{contact.status}</Text>
+                <Text>{contact.status}</Text>
             </View>
             <Button title="Call" onPress={() => {callNumber('+911234567890')}} />
           </View>

@@ -22,8 +22,8 @@ export const css = () => {
       flexDirection: 'row',
     },
     background: {
-        backgroundColor: isDarkMode ? 'black' : 'white',
-        flex: 1,
+      backgroundColor: isDarkMode ? 'black' : 'white',
+      flex: 1,
     },
     headingText: {
       fontSize: 24,
@@ -55,6 +55,9 @@ export const css = () => {
     cardMagenta: {
       backgroundColor: 'magenta',
     },
+    cardDisable: {
+      backgroundColor: '#333',
+    },
     textWhite: {
       color: 'white',
     },
@@ -79,8 +82,84 @@ export const css = () => {
       fontSize: 18,
       fontWeight: 'bold',
     },
-    contactStatus: {
-      // color: 'white',
+    heading: {
+      fontSize: 15,
+    },
+    inputWrapper: {
+      marginBottom: 15,
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      flexDirection: 'row',
+    },
+    inputColumn: {
+      flexDirection: 'column',
+    },
+    inputStyle: {
+      padding: 8,
+      width: '30%',
+      borderWidth: 1,
+      borderRadius: 4,
+      borderColor: '#16213e',
+    },
+    errorText: {
+      fontSize: 12,
+      color: '#ff0d10',
+    },
+    formActions: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+    },
+    primaryBtn: {
+      width: 120,
+      height: 65,
+      padding: 10,
+      borderRadius: 8,
+      marginHorizontal: 8,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    btnTxt: {
+      color: '#fff',
+      textAlign: 'center',
+      fontWeight: '700',
+    },
+    secondaryBtn: {
+      width: 120,
+      height: 65,
+      padding: 10,
+      borderRadius: 8,
+      marginHorizontal: 8,
+      backgroundColor: '#555',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    cardPassword: {
+      padding: 12,
+      borderRadius: 6,
+      marginHorizontal: 12,
+      marginTop: 30,
+    },
+    cardElevatedPassword: {
+      backgroundColor: '#333',
+      elevation: 1,
+      shadowOffset: {
+        width: 1,
+        height: 1,
+      },
+      shadowColor: '#333',
+      shadowOpacity: 0.2,
+      shadowRadius: 2,
+    },
+    generatedPassword: {
+      fontSize: 22,
+      textAlign: 'center',
+      marginBottom: 12,
+      color:'#000'
+    },
+    subTitle: {
+      fontSize: 18,
+      fontWeight: '600',
+      marginBottom: 2,
     },
   });
 };

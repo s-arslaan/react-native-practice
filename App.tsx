@@ -16,8 +16,8 @@ import PasswordGenerator from './components/PasswordGenerator';
 function App(): React.JSX.Element {
   const styles = css();
   return (
-    <SafeAreaView style={styles.background}>
-      <ScrollView>
+    <SafeAreaView style={styles.background} >
+      <ScrollView keyboardShouldPersistTaps="handled">
         {/* <FlatCards />
         <Text style={[styles.headingText, styles.container]}>Links</Text>
         <Links title="Google" websiteLink="https://www.google.com" color="green" />
